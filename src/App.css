@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif; }
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: #ffffff; }
+
+body {
+  width: 80%;
+  margin: 0 auto;
+  transition: width 0.7s; }
+
+@media only screen and (max-width: 600px) {
+  body {
+    width: 100%; } }
+
+.RecipeBox button {
+  width: 180px;
+  padding: 11px;
+  border-radius: 3px;
+  background: Transparent;
+  cursor: pointer;
+  outline: none;
+  border: 2px solid #eccc68;
+  text-transform: uppercase;
+  margin-right: 20px;
+  margin-top: 5px;
+  font-size: 20px;
+  height: 100%;
+  transition: all 0.3s; }
+  .RecipeBox button:hover {
+    transform: scale(1.05); }
+  .RecipeBox button:active {
+    transform: scale(1.1); }

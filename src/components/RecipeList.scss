@@ -1,0 +1,88 @@
+.RecipeList {
+  width: 100%;
+  border-radius: 5px;
+  background: rgba(47, 53, 66, 0.02);
+  margin-top: 20px;
+
+  ul {
+    list-style-type: none;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    border-radius: 1px;
+    display: inline-block;
+    height: auto;
+    width: 100%;
+    background: rgba(29, 209, 161, 0.4);
+    cursor: pointer;
+    transition: all 0.5s;
+    margin: 2px 0;
+    overflow: hidden;
+
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: rgba(29, 209, 161, 0.4);
+
+    button {
+      width: 70px;
+      height: 20px;
+      padding: 2px 2px;
+      font-size: 10px;
+      margin: 0 auto;
+    }
+
+    &:hover {
+      transform: scale(1.01);
+    }
+    .Recipe-title {
+      height: 45px;
+      margin-left: 20px;
+    }
+
+    .Recipe-content {
+      background: rgba(223, 228, 234, 1);
+      width: 100%;
+      height: auto;
+      padding-left: 10px;
+
+      .Recipe-content-title {
+        width: 100%;
+        display: inline-block;
+        * {
+          margin: 5px 5px;
+        }
+        span {
+          width: 100px;
+          float: left;
+          font-weight: bold;
+          font-style: italic;
+        }
+        button {
+          float: right;
+
+          &:nth-child(2) {
+            margin-right: 20px;
+          }
+        }
+      }
+
+      ul {
+        display: block;
+        list-style: disc outside none;
+        margin: 1em 0;
+        padding: 0 0 0 10px;
+
+        li {
+          background: Transparent;
+          outline: none;
+          margin-left: 10px;
+          display: list-item;
+        }
+      }
+    }
+  }
+}

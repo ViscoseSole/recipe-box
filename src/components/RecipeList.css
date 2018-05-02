@@ -1,0 +1,64 @@
+.RecipeList {
+  width: 100%;
+  border-radius: 5px;
+  background: rgba(47, 53, 66, 0.02);
+  margin-top: 20px; }
+  .RecipeList ul {
+    list-style-type: none;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0; }
+  .RecipeList li {
+    border-radius: 1px;
+    display: inline-block;
+    height: auto;
+    width: 100%;
+    background: rgba(29, 209, 161, 0.4);
+    cursor: pointer;
+    transition: all 0.5s;
+    margin: 2px 0;
+    overflow: hidden;
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: rgba(29, 209, 161, 0.4); }
+    .RecipeList li button {
+      width: 70px;
+      height: 20px;
+      padding: 2px 2px;
+      font-size: 10px;
+      margin: 0 auto; }
+    .RecipeList li:hover {
+      transform: scale(1.01); }
+    .RecipeList li .Recipe-title {
+      height: 45px;
+      margin-left: 20px; }
+    .RecipeList li .Recipe-content {
+      background: #dfe4ea;
+      width: 100%;
+      height: auto;
+      padding-left: 10px; }
+      .RecipeList li .Recipe-content .Recipe-content-title {
+        width: 100%;
+        display: inline-block; }
+        .RecipeList li .Recipe-content .Recipe-content-title * {
+          margin: 5px 5px; }
+        .RecipeList li .Recipe-content .Recipe-content-title span {
+          width: 100px;
+          float: left;
+          font-weight: bold;
+          font-style: italic; }
+        .RecipeList li .Recipe-content .Recipe-content-title button {
+          float: right; }
+          .RecipeList li .Recipe-content .Recipe-content-title button:nth-child(2) {
+            margin-right: 20px; }
+      .RecipeList li .Recipe-content ul {
+        display: block;
+        list-style: disc outside none;
+        margin: 1em 0;
+        padding: 0 0 0 10px; }
+        .RecipeList li .Recipe-content ul li {
+          background: Transparent;
+          outline: none;
+          margin-left: 10px;
+          display: list-item; }

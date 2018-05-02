@@ -1,0 +1,50 @@
+.NewRecipe {
+  margin-top: 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center; }
+  .NewRecipe * {
+    transition: all 0.2s; }
+  .NewRecipe button {
+    min-width: 155px;
+    padding: 11px;
+    margin: 0;
+    height: 100%;
+    z-index: 1; }
+  .NewRecipe .NewRecipe-prompt {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    opacity: 0;
+    transform: translateX(0);
+    animation: fade-in 1s 0.4s;
+    animation-fill-mode: forwards; }
+    .NewRecipe .NewRecipe-prompt button {
+      height: 45px;
+      padding: 3px 3px;
+      border: none;
+      margin: 0;
+      background: #eccc68;
+      height: 100%;
+      flex: 1 0px; }
+    .NewRecipe .NewRecipe-prompt input {
+      width: 100px;
+      padding: 11px;
+      border-radius: 3px;
+      height: 25px;
+      flex: 1 0px; }
+      .NewRecipe .NewRecipe-prompt input:nth-child(2) {
+        width: 200px;
+        flex: 2.5 0px; }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
