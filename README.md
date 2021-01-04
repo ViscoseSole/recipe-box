@@ -4,7 +4,7 @@ A table that keeps track of your recipes which you can modify or remove. Everyth
 
 ## Usage
 
-1.  `git clone https://github.com/ViscoseSole/recipe-box`
+1.  `git clone https://github.com/nhult/recipe-box`
 2.  `npm install`
 3.  `npm start`
 4.  Find project at `localhost:3000`
